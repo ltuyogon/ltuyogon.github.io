@@ -1,0 +1,9 @@
+portfolio/
+├── index.html
+├── about/
+│   └── index.html
+├── portfolio/
+│   └── index.html
+├── assets/
+│   └── css/
+│       └── style.css
