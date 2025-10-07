@@ -246,6 +246,84 @@ nav ul li a:hover {
   }
 }
 
+/* Animation keyframes */
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to each skill card */
+.skill-card {
+  opacity: 0;
+  animation: slideFadeUp 0.8s ease-out forwards;
+}
+
+/* Staggered delay for each card */
+.skill-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.skill-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.skill-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.skill-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* Fade-in and slide-up animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to portfolio section */
+#portfolio .section-content {
+  opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+}
+
+/* Staggered animation for headings and paragraphs */
+#portfolio h2,
+#portfolio h3,
+#portfolio p {
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+#portfolio h2 { animation-delay: 0.2s; }
+#portfolio h3 { animation-delay: 0.4s; }
+#portfolio p { animation-delay: 0.6s; }
+
+/* Image hover effect */
+.grid-image,
+.grid-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-image:hover,
+.grid-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
 footer {
   text-align: center;
